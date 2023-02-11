@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Loading ...</title>
+   <link rel="icon" href="image/loading-loader-svgrepo-com.png">
+   <script>
+
+      function redirect() {
+         setTimeout(myURL, 1500);
+      }
+      function myURL() {
+         document.location.href = 'main.html';
+      }
+   </script>
+   <style>
+      body {
+         margin: 0;
+         overflow: hidden;
+      }
+
+      .video-1 {
+         width: 100%;
+      }
+
+      @media only screen and (max-width: 600px) {
+         .video-1 {
+            width: auto
+         }
+      }
+   </style>
+</head>
+
+<body onload="setPlaySpeed(), redirect()">
+   <video id="myVideo" class="video-1" autoplay muted>
+      <source src="video/Pexels Videos 3867.mp4" type="video/mp4">
+   </video>
+   <script>
+      var vid = document.getElementById("myVideo");
+      function getPlaySpeed() {
+         alert(vid.playbackRate);
+      }
+      function setPlaySpeed() {
+         vid.playbackRate = 6.0;
+      }
+   </script>
+</body>
+
+</html>
