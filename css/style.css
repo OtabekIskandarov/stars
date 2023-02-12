@@ -148,3 +148,28 @@ text-align: center;
 .div-search:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+@media only screen and (max-width:600px) {
+  .div-header-logo {
+    width: 30px;
+    margin-left: 5px;
+  }
+    .div-header-item {
+      font-size: 12px;
+      gap: 10px;
+      margin-right: 5px;
+      letter-spacing: 0;
+      justify-content: flex-end;
+    }
+      .div-text {
+        top: 100px;
+        font-size: 14px;
+      }
+        .main-div-1 {
+          top: 140px;
+          height: 600px;
+        }
+          .but-search {
+            position: relative;
+            top: 170px;
+          }
+}
