@@ -173,3 +173,31 @@ text-align: center;
             top: 170px;
           }
 }
+@media only screen and (max-width:425px) {
+  .div-header-logo {
+    width: 25px;
+    margin-left: 5px;
+  }
+    .div-header-item {
+      font-size: 10px;
+      gap: 8px;
+      margin-right: 3px;
+      letter-spacing: 0;
+      justify-content: flex-end;
+    }
+      .div-text {
+        top: 40px;
+        font-size: 14px;
+      }
+        .main-div-1 {
+          top: 80px;
+          height: 600px;
+        }
+          .but-search {
+            position: relative;
+            top: 170px;
+          }
+          .div-2 {
+            height: 35px;
+          }
+}
